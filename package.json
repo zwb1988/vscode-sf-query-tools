@@ -3,7 +3,7 @@
     "name": "sf-query-tools",
     "displayName": "SF Query Tools",
     "description": "Salesforce Query Tool helps you to write better query",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name": "Wenbo Zhou",
         "email": "zwb1988@hotmail.com"
