@@ -1,0 +1,61 @@
+#main-input {
+    width: 100%;
+    height: 150px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    resize: none;
+}
+
+.run-button {
+    margin: 1em 0em;
+}
+
+.div-table {
+    display: table;
+    width: 100%;
+}
+
+.div-table-body {
+    display: table-row-group;
+}
+
+.div-table-row {
+    display: table-row;
+}
+
+.div-table-cell {
+    border: 1px solid #999;
+    display: table-cell;
+    padding: 3px 10px;
+}
+
+.div-table-title {
+    border: 1px solid #999;
+    display: table-cell;
+    padding: 3px 10px;
+    font-weight: bold;
+}
+
+/* .div-table-heading {
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.div-table-foot {
+    display: table-footer-group;
+    font-weight: bold;
+} */
+
+.plan-note {
+    margin: 8px 0px 0px 0px;
+}
+
+.plan-no {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px 0px 4px 0px;
+}

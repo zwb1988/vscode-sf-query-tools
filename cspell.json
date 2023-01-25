@@ -1,0 +1,20 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "copyfiles",
+        "sfdx",
+        "sftb",
+        "sftool",
+        "sobject",
+        "SOQL",
+        "soqlanalyze",
+        "soqlplan",
+        "wenbo",
+        "Zhou"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
