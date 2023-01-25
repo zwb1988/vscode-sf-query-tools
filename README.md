@@ -9,7 +9,7 @@ This tool is under construction and come with one feature to run your query plan
 
 This tools sends your SOQL statement to Salesforce org to calculate its cardinality. When querying an object with large data volume, the tool will show you which index fields are used and its cardinality. Better use this tool to avoid query time out and performance issue.
 
-<!-- ![query_plan_1] -->
+![query_plan_1]
 
 > Tip: When construct your SOQL query, replace any binding variables with values. If the values are dynamic, use same sample data.
 
@@ -27,10 +27,10 @@ If you have encountered any issue, please send your logs and screenshots to the 
 
 Users appreciate release notes as you update your extension.
 
-### 0.1.0
+### 0.1.1
 
 Testing phase of the extension. For experimental purpose only.
 
 <!-- definition section -->
 
-[query_plan_1]: resources/screenshots/query_plan-1.jpg
+[query_plan_1]: https://raw.githubusercontent.com/zwb1988/vscode-sf-query-tools/dev/resources/screenshots/query_plan-1.jpg
