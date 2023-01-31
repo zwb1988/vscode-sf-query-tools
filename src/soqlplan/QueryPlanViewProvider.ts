@@ -2,8 +2,7 @@ import * as vscode from "vscode";
 import { SoqlPlanExecutor } from "./SoqlPlanExecutor";
 
 export default class QueryPlanViewProvider
-    implements vscode.WebviewViewProvider
-{
+    implements vscode.WebviewViewProvider {
     public static readonly viewId = "zwb-sftool-soql-plan-entry";
 
     private _view?: vscode.WebviewView;
@@ -42,6 +41,11 @@ export default class QueryPlanViewProvider
                     let query = data?.value?.query;
                     if (query) {
                         this.runQueryPlan(query);
+                    } else {
+                        vscode.window.showInformationMessage(
+                            `Query cannot be empty`
+                        );
+                        this.enableRunButton();
                     }
                     break;
                 }
@@ -50,9 +54,6 @@ export default class QueryPlanViewProvider
     }
 
     public runQueryPlan(query: string) {
-        if (!this.planExecutor || !query) {
-            return;
-        }
         let planExec = new Promise((resolve, reject) => {
             this.planExecutor
                 .run(query)
@@ -95,12 +96,16 @@ export default class QueryPlanViewProvider
                         );
                     }
                 } finally {
-                    this._view?.webview.postMessage({
-                        type: "enableRunButton"
-                    });
+                    this.enableRunButton();
                 }
             }
         );
+    }
+
+    private enableRunButton() {
+        this._view?.webview.postMessage({
+            type: "enableRunButton"
+        });
     }
 
     private displayQueryPlanResult(queryResult: any) {
