@@ -1,4 +1,4 @@
-# Salesforce Query Tool README
+# Salesforce Query Tool
 
 The VS Code extension helps you to write better query.
 This tool is under construction and come with one feature to run your query plan to keep your SOQL performant for large data volume.
@@ -21,7 +21,7 @@ This tools sends your SOQL statement to Salesforce org to calculate its cardinal
 ## Known Issues
 
 This extension is under construction, not even in its alpha phase.
-If you have encountered any issue, please send your logs and screenshots to the author.
+If you have encountered any issue, please raise an issue on the related github repository. You can find it on the [extension page](https://marketplace.visualstudio.com/items?itemName=wenbo-zhou.sf-query-tools) on the Marketplace
 
 ## Release Notes
 
@@ -30,6 +30,9 @@ Users appreciate release notes as you update your extension.
 ### 0.1.1
 
 Testing phase of the extension. For experimental purpose only.
+
+### 0.1.2
+Fixed an issue when no query is entered, the run button will not be enabled again
 
 <!-- definition section -->
 
